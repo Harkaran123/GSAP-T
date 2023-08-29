@@ -48,6 +48,10 @@ html, body{
   transition: all 0.5s;
 }
 
+.menu-icon{
+  z-index: 100;
+}
+
 .nav-items:hover::after{
 
   width: 100%;
@@ -70,6 +74,27 @@ html, body{
 
 .homebanner{
   z-index: -1;
+}
+
+.sidebar-show{
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: all 0.6s;
+}
+
+.sidebar-hide{
+  z-index: 10;
+  top: 0;
+  left: -100%;
+  transition: all 0.6s;
+}
+
+
+.sidebar h1{
+  color: black;
+  font-size: 30px;
+
 }
 
 @media (max-width: 760px){
